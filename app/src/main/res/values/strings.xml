@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">SliteProj</string>
+    <string name="personName">Person Name:</string>
+    <string name="AppointmentDate">Appointment Date:</string>
+    <string name="AppointmentTime">Appointment Time:</string>
+    <string name="AppointmentType">Appointment Type:</string>
+    <string name="AppointmentNotes">Appointment Notes:</string>
+    <string name="CardNumber">Card Number:</string>
+    <string name="CardCVC">Card CVC:</string>
+    <string name="CardExpireDate">Card Expire Date:</string>
+    <string name="TotalAmount">Total Amount:</string>
+    <string name="PaidAmount">Paid Amount:</string>
+    <string name="deletecondes">Delete</string>
+    <string name="editcondes">Edit</string>
+    <string name="AppointmentTime2">Enter Appointment Time</string>
+    <string name="AppointmentType2">Appointment Type</string>
+    <string name="AppointmentNotes2">Appointment Notes</string>
+    <string name="CardNumber2">Card Number</string>
+    <string name="CardCVC2">Card CVC</string>
+    <string name="CardExpireDate2">Card Expire Date</string>
+    <string name="TotalAmount2">Total Amount</string>
+    <string name="PaidAmount2">Paid Amount</string>
+    <string name="image2">image</string>
+    <string name="InsertAppointmentandPaymentDetails">Insert Appointment and Payment Details</string>
+    <string name="EnterYourName">Enter Your Name</string>
+
+    <string name="EnterappointmentType">Enter appointment Type</string>
+    <string name="EnterappointmentNotes">Enter appointment Notes</string>
+    <string name="EnterCardNumber">Enter Card Number</string>
+    <string name="EnterCVC">Enter CVC</string>
+    <string name="EnterExipireDate">Enter Exipire Date</string>
+    <string name="TotalAmount3">Enter Total Amount</string>
+    <string name="PaidAmount3">Enter Paid Amount</string>
+    <string name="AppointmentDate3">Enter Appointment Date</string>
+    <string name="Payableamount">Payable amount</string>
+    <string name="MakeAppointment">Make Appointment</string>
+    <string name="Adate">Appointment Date</string>
+    <string name="Atime">Appointment Time</string>
+    <string name="update_appointment_and_payment_details">Update Appointment and Payment Details</string>
+    <string name="todo">TODO</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="appointment_time">Appointment Time</string>
+    <string name="Appointment_date">Appointment Date</string>
+    <string name="enter_appointment_type">Enter appointment Type</string>
+    <string name="enter_appointment_notes">Enter appointment Notes</string>
+    <string name="enter_card_number">Enter Card Number</string>
+    <string name="enter_cvc">Enter CVC</string>
+    <string name="enter_exipire_date">Enter Exipire Date</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="paid_amount">Paid Amount</string>
+    <string name="update">UPDATE</string>
+
+</resources>

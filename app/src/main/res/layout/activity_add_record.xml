@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddRecordActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/displayTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/InsertAppointmentandPaymentDetails"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/personImage"
+            android:layout_width="86dp"
+            android:layout_height="68dp"
+            android:autofillHints="image"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/image2"
+            android:padding="2dp"
+            android:src="@drawable/ic_action_addphoto" />
+
+        <EditText
+            android:id="@+id/personName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/background"
+            android:hint="@string/EnterYourName"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/personDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="date"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/background"
+            android:hint="@string/AppointmentDate3"
+            android:inputType="date"
+            android:padding="10dp" />
+
+        <EditText
+            android:autofillHints="time"
+            android:id="@+id/personTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/background"
+            android:hint="@string/AppointmentTime2"
+            android:inputType="time"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/personType"
+            android:autofillHints="type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+            android:background="@drawable/background"
+            android:hint="@string/EnterappointmentType"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/personNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="notes"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/background"
+            android:hint="@string/EnterappointmentNotes"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/personCnumber"
+            android:autofillHints="cnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+            android:background="@drawable/background"
+            android:hint="@string/EnterCardNumber"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/personCVC"
+            android:autofillHints="cvc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+
+            android:background="@drawable/background"
+            android:hint="@string/EnterCVC"
+            android:inputType="numberPassword"
+            android:padding="10dp" />
+
+        <EditText
+            android:autofillHints="edate"
+            android:id="@+id/personEdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            android:layout_marginTop="7dp"
+
+            android:background="@drawable/background"
+            android:hint="@string/EnterExipireDate"
+            android:inputType="date"
+            android:padding="10dp" />
+
+        <EditText
+            android:autofillHints="amount"
+            android:id="@+id/personamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="7dp"
+            android:background="@drawable/background"
+            android:hint="@string/TotalAmount3"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:autofillHints="paidamount"
+            android:id="@+id/personpaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="7dp"
+
+            android:background="@drawable/background"
+            android:hint="@string/PaidAmount3"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/addInfoBtn"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+
+            android:background="@drawable/background"
+            android:text="@string/MakeAppointment"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/payablebtn"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+
+            android:background="@drawable/background"
+            android:text="@string/Payableamount"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/payable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+
+            android:textColor="@color/blackColor"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

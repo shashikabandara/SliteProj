@@ -4,7 +4,7 @@ public class Model {
 
     String id, image, name, date, time, type,notes,cnumber,cvc,edate,amount,paid,addTimeStamp, updateTimeStamp;
 
-    public Model(String id, String image, String name, String date, String time, String type, String notes, String cnumber,String cvc,String edate,String amount,String paid,String addTimeStamp, String updateTimeStamp) {
+    public Model(String id, String image, String name, String date, String time, String type, String notes, String cnumber, String cvc, String edate, String amount, String paid, String addTimeStamp, String updateTimeStamp) {
         this.id = id;
         this.image = image;
         this.name = name;

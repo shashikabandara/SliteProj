@@ -7,11 +7,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.Constraints;
 
 import java.util.ArrayList;
 
-public class  DatabaseHelper extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
 
     public DatabaseHelper(@Nullable Context context) {
         super(context, Constants.DB_NAME, null, Constants.DB_VERSION);
@@ -96,7 +95,7 @@ public class  DatabaseHelper extends SQLiteOpenHelper {
 
         if (cursor.moveToNext()) {
             do {
-                Model model = new Model(
+                Model Model = new Model(
                 ""+cursor.getInt(cursor.getColumnIndex(Constants.C_ID)),
                 ""+cursor.getString(cursor.getColumnIndex(Constants.C_IMAGE)),
                 ""+cursor.getString(cursor.getColumnIndex(Constants.C_NAME)),
@@ -113,7 +112,7 @@ public class  DatabaseHelper extends SQLiteOpenHelper {
                 ""+cursor.getString(cursor.getColumnIndex(Constants.C_UPDATED_TIMESTAMP))
 
                 );
-                arrayList.add(model);
+                arrayList.add(Model);
             }while (cursor.moveToNext());
         }
 

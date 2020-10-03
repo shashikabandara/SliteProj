@@ -27,8 +27,6 @@ import android.widget.Toast;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
-import de.hdodenhof.circleimageview.CircleImageView;
-
 public class AddRecordActivity extends AppCompatActivity {
 
     private ImageView pImageView;

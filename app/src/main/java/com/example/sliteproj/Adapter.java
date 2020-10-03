@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,13 +23,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Holder>{
     private Context context;
     private ArrayList<Model> arrayList;
 
-    DatabaseHelper databaseHelper;
+    DatabaseHelper DatabaseHelper;
 
     public Adapter(Context context, ArrayList<Model> arrayList) {
         this.context = context;
         this.arrayList = arrayList;
 
-        databaseHelper = new DatabaseHelper(context);
+        DatabaseHelper = new DatabaseHelper(context);
     }
 
     @NonNull
@@ -45,21 +44,21 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Holder>{
     public void onBindViewHolder(@NonNull Holder holder, final int position) {
 
         // get for views
-        Model model = arrayList.get(position);
-        final String id = model.getId();
-        final String image = model.getImage();
-        final String name = model.getName();
-        final String date = model.getDate();
-        final String time = model.getTime();
-        final String type = model.getType();
-        final String notes = model.getNotes();
-        final String Cnumber = model.getCnumber();
-        final String Cvc = model.getCvc();
-        final String Edate = model.getEdate();
-        final String amount = model.getAmount();
-        final String paid = model.getPaid();
-        final String addTimeStamp = model.getAddTimeStamp();
-        final String updateTimeStamp = model.getUpdateTimeStamp();
+        Model Model = arrayList.get(position);
+        final String id = Model.getId();
+        final String image = Model.getImage();
+        final String name = Model.getName();
+        final String date = Model.getDate();
+        final String time = Model.getTime();
+        final String type = Model.getType();
+        final String notes = Model.getNotes();
+        final String Cnumber = Model.getCnumber();
+        final String Cvc = Model.getCvc();
+        final String Edate = Model.getEdate();
+        final String amount = Model.getAmount();
+        final String paid = Model.getPaid();
+        final String addTimeStamp = Model.getAddTimeStamp();
+        final String updateTimeStamp = Model.getUpdateTimeStamp();
 
         // set data
         holder.profileIv.setImageURI(Uri.parse(image));
@@ -132,7 +131,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Holder>{
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                databaseHelper.deleteInfo(id);
+                DatabaseHelper.deleteInfo(id);
                 ((MainActivity)context).onResume();
                 Toast.makeText(context, "Delete Successfully!", Toast.LENGTH_SHORT).show();
             }

@@ -8,16 +8,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.Button;
 
-import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
 
     FloatingActionButton fab;
     RecyclerView mRecyclerView;
-    private DatabaseHelper databaseHelper;
+    private DatabaseHelper DatabaseHelper;
     ActionBar actionBar;
 
     @Override
@@ -32,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.recyclerView);
 
 
-        databaseHelper = new DatabaseHelper(this);
+        DatabaseHelper = new DatabaseHelper(this);
 
         showRecord();
 
@@ -49,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void showRecord() {
 
-        Adapter adapter = new Adapter(MainActivity.this,
-                databaseHelper.getAllData(Constants.C_Add_TIMESTAMP + " DESC"));
+        Adapter Adapter = new Adapter(MainActivity.this,
+                DatabaseHelper.getAllData(Constants.C_Add_TIMESTAMP + " DESC"));
 
-        mRecyclerView.setAdapter(adapter);
+        mRecyclerView.setAdapter(Adapter);
     }
 
     @Override

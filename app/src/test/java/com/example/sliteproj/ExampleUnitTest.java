@@ -26,5 +26,15 @@ public class ExampleUnitTest {
         assertEquals(200,result);
 
     }
+    public void testsubstractionCalculation2(){
+        int result = addRecordActivity.substractionCalculation(1000,1000);
+        assertEquals(0,result);
+
+    }
+    public void testsubstractionCalculation3(){
+        int result = addRecordActivity.substractionCalculation(800,1000);
+        assertEquals(-200,result);
+
+    }
 
 }
